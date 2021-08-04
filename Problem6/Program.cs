@@ -11,11 +11,16 @@ namespace Problem6
         static void Main(string[] args)
         {
             string word = "step on no pets";
+            CheckPalindrome(word);
+            Console.ReadLine();
+        }
 
+        public static void CheckPalindrome(string word)
+        {
             char[] charList = word.ToCharArray();
             Array.Reverse(charList);
             string reverse = new string(charList);
- 
+
             if (word.Equals(reverse))
             {
                 Console.WriteLine("Palindrome");
@@ -24,7 +29,6 @@ namespace Problem6
             {
                 Console.WriteLine("Not Palindrome");
             }
-            Console.ReadLine();
         }
     }
-    }
+}
