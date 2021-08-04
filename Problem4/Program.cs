@@ -22,7 +22,7 @@ namespace Problem4
                     Console.Write("*");
 
                 }
-                Console.Write("\n");
+                Console.WriteLine("\n");
             }
             for (int i = rows - 1; i >= 1; i--)
             {
@@ -34,7 +34,7 @@ namespace Problem4
                 {
                     Console.Write("*");
                 }
-                Console.Write("\n");
+                Console.WriteLine("\n");
             }
             Console.ReadLine();
         }
